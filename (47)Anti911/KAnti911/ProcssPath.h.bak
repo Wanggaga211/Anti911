@@ -1,0 +1,18 @@
+#pragma once
+#include <fltKernel.h>
+#include  "ProcessHelper.h"
+#include "Common.h"
+
+
+
+
+
+
+typedef struct _PROCESS_PATH_REQUEST_
+{
+	HANDLE ProcessIdentity;
+	WCHAR  ProcessPath[MAX_PATH];
+}PROCESS_PATH_REQUEST, * PPROCESS_PATH_REQUEST;
+NTSTATUS PsGetProcessPath(PPROCESS_PATH_REQUEST ProcessPathReQuest);
+BOOLEAN GetProcessPathByEProcess(PVOID EProcess, WCHAR* ProcessFullPath, ULONG ProcessFullPathLength);
+BOOLEAN GetProcessPathByPeb(PVOID EProcess, WCHAR* ProcessFullPath, ULONG ProcessFullPathLength);

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="进程帮助">
+      <UniqueIdentifier>{1ad6a65e-1b38-40f1-bb28-d83bd5a81a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程路径">
+      <UniqueIdentifier>{4f3d4cb6-1cad-443f-a9e6-baeecfcdea41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="注入帮助">
+      <UniqueIdentifier>{8d52ca63-ac5b-4fca-a1af-983884972e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程模块">
+      <UniqueIdentifier>{c0c7f591-e7ea-44f4-bc1a-b03707f22095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程句柄">
+      <UniqueIdentifier>{d2403e87-46a5-4d8e-a6a4-9efd7ee7206e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_tmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessHelper.cpp">
+      <Filter>进程帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="InjectHelper.cpp">
+      <Filter>注入帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessPath.cpp">
+      <Filter>进程帮助\进程路径</Filter>
+    </ClCompile>
+    <ClCompile Include="IoControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModule.cpp">
+      <Filter>进程帮助\进程模块</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessHandle.cpp">
+      <Filter>进程帮助\进程句柄</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_tmain.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessHelper.h">
+      <Filter>进程帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessPath.h">
+      <Filter>进程帮助\进程路径</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectHelper.h">
+      <Filter>注入帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="IoControl.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModule.h">
+      <Filter>进程帮助\进程模块</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessHandle.h">
+      <Filter>进程帮助\进程句柄</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="注入帮助">
+      <UniqueIdentifier>{5bd1e0e8-328e-4023-868f-c5d28e61e9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="注入帮助\Apc注入">
+      <UniqueIdentifier>{18f8354b-f8ad-4c9f-8cea-6ca95e26b192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="注入帮助\线程注入">
+      <UniqueIdentifier>{515df35c-74f8-447b-aa11-ef9f3652a641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DriverEntry">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="内存帮助">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="进程帮助">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="字符串帮助">
+      <UniqueIdentifier>{fdd18e57-a76d-4155-86bb-db8adb36e75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文件帮助">
+      <UniqueIdentifier>{beafc651-4f82-49cd-85cd-4db466e2fa91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShellCode">
+      <UniqueIdentifier>{1d098770-feae-462d-b5c3-1a83e715a2ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="系统帮助">
+      <UniqueIdentifier>{106b68c6-dbe8-48cb-91e0-3dfb46fc3bd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="对象帮助">
+      <UniqueIdentifier>{56fa53ef-43d1-4ec3-a448-1808b3660950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook帮助">
+      <UniqueIdentifier>{574b693e-bed3-4aed-b116-ea2a0cf99135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook帮助\SsdtHook">
+      <UniqueIdentifier>{d75d6e93-f581-4b78-bf4d-ef51be12c4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook帮助\InlineHook">
+      <UniqueIdentifier>{dd4303b5-55df-4508-b939-763d0627995f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程路径">
+      <UniqueIdentifier>{65d2cc23-6971-4672-9ec0-084b6ab3bf1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程线程">
+      <UniqueIdentifier>{44741f55-0271-4c64-978d-b6608d9d144e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程句柄">
+      <UniqueIdentifier>{b7b8192d-29ff-4323-8df2-a4f1f2557162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程模块">
+      <UniqueIdentifier>{9dcadbda-04ec-43c7-b34f-934cf9c5009b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="进程帮助\进程内存">
+      <UniqueIdentifier>{f51021e0-cf1e-48a9-8ae1-2fe18259a5f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DriverEntry.h">
+      <Filter>DriverEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>字符串帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectHelper.h">
+      <Filter>注入帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="IoControlRoutine.h">
+      <Filter>DriverEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>DriverEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessHelper.h">
+      <Filter>进程帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="PeHelper.h">
+      <Filter>文件帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellCode.h">
+      <Filter>ShellCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemHelper.h">
+      <Filter>系统帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryHelper.h">
+      <Filter>内存帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadInject.h">
+      <Filter>注入帮助\线程注入</Filter>
+    </ClInclude>
+    <ClInclude Include="HookHelper.h">
+      <Filter>Hook帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="SsdtHook.h">
+      <Filter>Hook帮助\SsdtHook</Filter>
+    </ClInclude>
+    <ClInclude Include="FakeService.h">
+      <Filter>Hook帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="InlineHook.h">
+      <Filter>Hook帮助\InlineHook</Filter>
+    </ClInclude>
+    <ClInclude Include="ApcInject.h">
+      <Filter>注入帮助\Apc注入</Filter>
+    </ClInclude>
+    <ClInclude Include="KiFastCall.h">
+      <Filter>Hook帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>DriverEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="StackBackTrace.h">
+      <Filter>进程帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcssPath.h">
+      <Filter>进程帮助\进程路径</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectHelper.h">
+      <Filter>对象帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessThread.h">
+      <Filter>进程帮助\进程线程</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessHandle.h">
+      <Filter>进程帮助\进程句柄</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModule.h">
+      <Filter>进程帮助\进程模块</Filter>
+    </ClInclude>
+    <ClInclude Include="CallbackHelper.h">
+      <Filter>对象帮助</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMemory.h">
+      <Filter>进程帮助\进程内存</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DriverEntry.c">
+      <Filter>DriverEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHelper.c">
+      <Filter>字符串帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="InjectHelper.c">
+      <Filter>注入帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessHelper.c">
+      <Filter>进程帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="PeHelper.c">
+      <Filter>文件帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellCode.c">
+      <Filter>ShellCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemHelper.c">
+      <Filter>系统帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryHelper.c">
+      <Filter>内存帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadInject.c">
+      <Filter>注入帮助\线程注入</Filter>
+    </ClCompile>
+    <ClCompile Include="HookHelper.c">
+      <Filter>Hook帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="SsdtHook.c">
+      <Filter>Hook帮助\SsdtHook</Filter>
+    </ClCompile>
+    <ClCompile Include="FakeService.c">
+      <Filter>Hook帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="InlineHook.c">
+      <Filter>Hook帮助\InlineHook</Filter>
+    </ClCompile>
+    <ClCompile Include="ApcInject.c">
+      <Filter>注入帮助\Apc注入</Filter>
+    </ClCompile>
+    <ClCompile Include="KiFastCall.c">
+      <Filter>Hook帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.c">
+      <Filter>DriverEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="StackBackTrace.c">
+      <Filter>进程帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessPath.c">
+      <Filter>进程帮助\进程路径</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectHelper.c">
+      <Filter>对象帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessThread.c">
+      <Filter>进程帮助\进程线程</Filter>
+    </ClCompile>
+    <ClCompile Include="IoControlRoutine.c">
+      <Filter>DriverEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessHandle.c">
+      <Filter>进程帮助\进程句柄</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModule.c">
+      <Filter>进程帮助\进程模块</Filter>
+    </ClCompile>
+    <ClCompile Include="CallbackHelper.c">
+      <Filter>对象帮助</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMemory.c">
+      <Filter>进程帮助\进程内存</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="x86.asm">
+      <Filter>ShellCode</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

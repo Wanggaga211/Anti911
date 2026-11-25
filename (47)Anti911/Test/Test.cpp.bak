@@ -1,0 +1,48 @@
+// Test.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+
+char* __v1 = "Const HelloWorld";
+int _tmain()
+{
+
+	_tprintf(_T("%d\r\n"), GetCurrentProcessId());
+	char v1[20] = "Stack HelloWorld";
+	char* v2 = (char*)malloc(sizeof(char) * 20);
+
+	memcpy(v2, "Heap HelloWorld", 20);
+
+
+
+	printf("%p\r\n", v1);
+	printf("%p\r\n", __v1);
+	printf("%p\r\n", v2);
+
+	_tprintf(_T("Input AnyKey To CheckData\r\n"));
+	_gettchar();
+
+
+	printf("%s\r\n", v1);
+	printf("%s\r\n", __v1);
+	printf("%s\r\n", v2);
+
+	_tprintf(_T("Input AnyKey To Exit\r\n"));
+	_gettchar();
+	_gettchar();
+
+	if (v2!=NULL)
+	{
+		free(v2);
+		v2 = NULL;
+	}
+
+
+
+    return 0;
+}
+
